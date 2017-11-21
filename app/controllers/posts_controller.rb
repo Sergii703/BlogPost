@@ -19,11 +19,10 @@ class PostsController < ApplicationController
     end
   
   def update
-        
           if @post.update_attributes(post_params)
-            redirect_to @post
+            redirect_to @post, success: 'Articles has been updated correctly'
           else
-            render :edit
+            render :edit, danger: 'Article has not been updated correctly'
           end
       end
       
