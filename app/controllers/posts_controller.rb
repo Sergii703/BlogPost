@@ -29,27 +29,25 @@ class PostsController < ApplicationController
   def create
       @post = Post.new(post_params)
       if @post.save
-        redirect_to @post
+        redirect_to @post, success: "The article successfully has been created"
       else
-        render :new
+        render :new, danger: 'The article has been created'
       end    
   end
   
   def destroy
     
       @post.destroy
-      redirect_to posts_path
+      redirect_to posts_path, success: 'The article has bee deleted'
   end
   
-  
   private
-  
   def set_post
     @post = Post.find(params[:id])
   end
   
   def post_params
-    params.require(:post).permit(:title, :summary, :body)
+    params.require(:post).permit(:title, :summary, :body, :image)
   end
 end
 
