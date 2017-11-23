@@ -1,6 +1,6 @@
 class TagsController < ApplicationController
   def show
-    @tag = Tag.find.by(name: params[:id])
+    @tag = Tag.find_by(name: params[:id])
     @posts = @tag.posts
   end
 end
