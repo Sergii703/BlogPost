@@ -1,0 +1,15 @@
+ru:
+    activerecord:
+        models:
+            post: 'Articles'
+        attributes:
+            post:
+                title: 'Name'
+                summary: 'Shortcut'
+                body: 'Contains'
+                all_tags: 'Tags'
+                category:
+            name: 'Name'
+        errors:
+         messages:
+            blank: 'Cannot be blank'
