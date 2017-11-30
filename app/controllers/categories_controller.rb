@@ -16,20 +16,19 @@ class CategoriesController < ApplicationController
   def create
     @category = Category.new(category_params)
     if @category.save
-       redirect_to categories_path, success: 'Category has been created succesfully'
+       redirect_to categories_path, success: 'Category has been created successfully'
     else
        flash[:danger] = 'Category has not been created'
        render :new
     end
   end
   
-  def edit
-    
+  def edit   
   end
   
   def update
     if @category.update_attributes(category_params)
-       redirect_to categories_path, success: 'Category has been created succesfully'
+       redirect_to categories_path, success: 'Category has been created successfully'
     else
        flash[:danger] = 'Category has not been created'
        render :edit 
@@ -38,7 +37,7 @@ class CategoriesController < ApplicationController
   
   def destroy
     @category.destroy
-    redirect_to categories_path, success: 'Category has been deleted succesfully'
+    redirect_to categories_path, success: 'Category has been deleted successfully'
   end
 
   private
@@ -48,6 +47,6 @@ class CategoriesController < ApplicationController
   end
   
   def category_params
-    params.reguired(:category).permit(:name)
+    params.require(:category).permit(:name, :parent_id)
   end
 end

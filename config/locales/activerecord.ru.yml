@@ -8,8 +8,9 @@ ru:
                 summary: 'Shortcut'
                 body: 'Contains'
                 all_tags: 'Tags'
-                category:
-            name: 'Name'
+            category:
+                name: 'Name'
+                parent_id: 'Parents category'
         errors:
-         messages:
-            blank: 'Cannot be blank'
+            messages:
+                blank: 'Cannot be blank'

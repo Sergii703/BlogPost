@@ -37,6 +37,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'bootstrap', '~> 4.0.0.beta2.1'
+gem 'ancestry'
 
 source 'https://rails-assets.org' do
 	gem 'rails-assets-tether', '>=1.1.0'

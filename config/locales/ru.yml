@@ -1,4 +1,29 @@
-ru:
+ru:            
+    common:
+        errors: 'There are some problems'
+        back: 'Back'
+    will_paginate:
+        previous_lable: 'Previous'
+        next_label: 'Next'
     posts:
+        index:
+            title: 'The articles'
         new:
             title: 'New Article'
+        form:
+            submit:
+                '%{action} the article'
+        edit:
+            title: 'Edit the article' 
+    categories:
+        index:
+            title: 'Categories'
+        new:
+            title: 'New Category'
+        edit:
+            title: 'Edit the category'
+        form:
+            submit:
+                '%{action} the category'
+       
+        
