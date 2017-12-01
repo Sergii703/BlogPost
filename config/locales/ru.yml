@@ -24,6 +24,4 @@ ru:
             title: 'Edit the category'
         form:
             submit:
-                '%{action} the category'
-       
-        
+                '%{action} the category'   
