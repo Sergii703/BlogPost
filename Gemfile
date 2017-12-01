@@ -38,6 +38,8 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'bootstrap', '~> 4.0.0.beta2.1'
 gem 'ancestry'
+#gem 'pg', '~> 0.18'
+gem 'mysql2'
 
 source 'https://rails-assets.org' do
 	gem 'rails-assets-tether', '>=1.1.0'
